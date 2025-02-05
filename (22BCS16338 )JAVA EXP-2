@@ -1,4 +1,5 @@
 1.	Video Class:-
+
 class Video { private String title;
 private boolean checkedOut; private double averageRating; private int ratingCount;
 
@@ -39,9 +40,11 @@ public boolean isCheckedOut() { return checkedOut;
 public double getAverageRating() { return averageRating;
 }
 }
- 
+
+*************************************************************************************************************************************************
 
 2.	VideoStore Class:-
+
 class VideoStore { private Video[] videos; private int count;
 
 public VideoStore(int capacity) { videos = new Video[capacity]; count = 0;
@@ -92,8 +95,11 @@ return null;
 }
 }
  
+********************************************************************************************************************************************
 
 3.	VideoStoreLauncher Class:-
+
+
 public class VideoStoreLauncher { public static void main(String[] args) {
 VideoStore store = new VideoStore(10);
 
@@ -108,3 +114,5 @@ store.checkOut("Godfather II"); store.returnVideo("Godfather II");
 store.listInventory();
 }
 }
+
+
